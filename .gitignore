@@ -1,0 +1,17 @@
+.config/QtProject.conf
+.config/Atom/
+.config/chromium/
+.config/gconf/
+.config/gotop/
+.config/gtk-3.0/
+.config/htop/
+.config/kitty/
+.config/mpv/
+.config/procps/
+.config/qutebrowser/bookmarks/
+.config/pulse/
+.config/qutebrowser/quickmarks
+.config/remmina/
+.config/vlc/
+.config/dconf/
+.config/freerdp/
