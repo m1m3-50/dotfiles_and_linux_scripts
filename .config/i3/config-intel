@@ -38,7 +38,7 @@ set $ext-screen-2 HDMI1
 focus_follows_mouse no
 
 # Wallpaper and composition
-exec --no-startup-id compton -i 0.8
+exec --no-startup-id compton
 exec --no-startup-id $HOME/.config/wallpaper_magic.sh
 
 # Polybar
@@ -48,7 +48,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
-bindsym $mod+Shift+q kill 
+bindsym $mod+Shift+q kill
 
 # lock
 bindsym $mod+x exec i3lock
@@ -60,7 +60,7 @@ bindsym $mod+z exec urxvt -T ranger -e bash -c ranger
 set $bg-color			#2f343f
 set $inactive-bg-color		#2f343f
 set $text-color			#f3f4f5
-set $inactive-text-color	#676E7D 
+set $inactive-text-color	#676E7D
 set $urgent-bg-color		#E53935
 set $indicator-color		#2f348f
 
@@ -273,6 +273,7 @@ workspace $ws10 output $main-screen
 assign [title="gotop"] 9
 assign [title="ranger"] 4
 assign [title="wifi"] 10
+assign [title="matrix"] 10
 assign [class="^URxvt$"] 1
 assign [title="statuses"] 9
 assign [class="^Firefox$"] 2
@@ -283,6 +284,9 @@ assign [class="Atom"] 3
 # start layout
 exec urxvt -T gotop -e bash -c gotop
 exec urxvt -T wifi -e bash -c wicd-curses
+exec urxvt -T matrix -e bash -c cmatrix
+
+exec --no-startup-id "i3-msg 'workspace 1'
 
 
 # reload the configuration file
@@ -300,10 +304,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -325,5 +329,4 @@ bindsym $mod+r mode "resize"
 #         status_command i3status
 # }
 
-# Run processes... 
-
+# Run processes...

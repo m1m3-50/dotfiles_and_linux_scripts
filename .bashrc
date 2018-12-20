@@ -46,3 +46,5 @@ alias reboot="sudo reboot"
 alias xbps-query="sudo xbps-query"
 alias brightnessctl="sudo brightnessctl"
 alias startx="$HOME/.config/startx_menu.sh"
+
+export ELECTRON_TRASH=gio

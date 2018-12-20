@@ -1,5 +1,10 @@
+# single misc files
 .config/QtProject.conf
+
+# IDEs & stuff
 .config/Atom/
+
+# system junk
 .config/chromium/
 .config/gconf/
 .config/gotop/
@@ -9,9 +14,13 @@
 .config/mpv/
 .config/procps/
 .config/qutebrowser/bookmarks/
-.config/pulse/
 .config/qutebrowser/quickmarks
+.config/pulse/
 .config/remmina/
 .config/vlc/
 .config/dconf/
 .config/freerdp/
+.config/urxvtconfig/
+
+# because it is swappable from side files
+.config/i3/config
