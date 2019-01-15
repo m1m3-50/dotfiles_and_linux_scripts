@@ -1,26 +1,2 @@
-# single misc files
-.config/QtProject.conf
-
-# IDEs & stuff
-.config/Atom/
-
-# system junk
-.config/chromium/
-.config/gconf/
-.config/gotop/
-.config/gtk-3.0/
-.config/htop/
-.config/kitty/
-.config/mpv/
-.config/procps/
-.config/qutebrowser/bookmarks/
-.config/qutebrowser/quickmarks
-.config/pulse/
-.config/remmina/
-.config/vlc/
-.config/dconf/
-.config/freerdp/
-.config/urxvtconfig/
-
-# because it is swappable from side files
+# ignore i3 config (it gets contructed from ~-intel or ~-nvidia, depending on settings)
 .config/i3/config
