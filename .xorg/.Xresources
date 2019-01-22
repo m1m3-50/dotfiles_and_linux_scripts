@@ -1,0 +1,17 @@
+!!! COMMON VARIABLES
+#define BG #373342
+#define FG #2f343f
+
+!!! URXVT CONFIG
+URxvt.scrollBar: false
+URxvt.background: BG
+URxvt*transparent: true
+URxvt*shading: 20
+URxvt*foreground: #ffffff
+URxvt*internalBorder: 10
+URxvt*fading: 50
+URxvt.xftAntialias:     true
+URxvt*font:             xft:inconsolata:pixelsize=18:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=18:antialias=true,hinting=true, xft:Noto Emoji
+URxvt*boldFont:         xft:inconsolata:pixelsize=18:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=18:antialias=true,hinting=true
+URxvt*italicFont:       xft:inconsolata:pixelsize=18:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=18:antialias=true,hinting=true
+URxvt*bolditalicFont:   xft:inconsolata:pixelsize=18:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=18:antialias=true,hinting=true

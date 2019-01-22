@@ -1,4 +1,5 @@
-xrandr --newmode "1504x1000_60.00"  124.25  1504 1600 1752 2000  1000 1003 1013 1038 -hsync +vsync
-xrandr --addmode $1 1504x1000_60.00
-xrandr --output $1 --mode 1504x1000_60.00
-
+MODELINE="1800x1200_60.00  180.75  1800 1920 2112 2424  1200 1203 1213 1245 -hsync +vsync"
+MODENAME=`echo $MODELINE | awk -F' ' '{ print $1 };'`
+xrandr --newmode $MODELINE
+xrandr --addmode $1 $MODENAME
+xrandr --output $1 --mode $MODENAME

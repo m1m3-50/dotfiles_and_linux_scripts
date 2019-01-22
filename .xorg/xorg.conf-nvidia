@@ -13,12 +13,6 @@ Section "Device"
 
 EndSection
 
-# Section "Device"
-# 	Identifier "0x42"
-# 	Driver "intel"
-# 	Option "Backlight" "intel_backlight"
-# EndSection
-
 Section "Screen"
     Identifier     "Default Screen"
     Device         "nvidia"

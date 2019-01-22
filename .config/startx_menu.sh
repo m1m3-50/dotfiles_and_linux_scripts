@@ -15,5 +15,5 @@ else
 	export MONITOR2="DP1"
 fi
 
+cat $HOME/.config/i3/config-common >> $HOME/.config/i3/config
 startx
-
