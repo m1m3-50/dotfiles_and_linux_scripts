@@ -69,8 +69,8 @@ bindsym $mod+d exec rofi -show run -theme /home/mime/.config/rofi/themes/rofi.ra
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # Gaps config
-gaps inner 12
-gaps outer -2
+gaps inner 10
+gaps outer 15
 for_window [class=".*"] border pixel 0
 hide_edge_borders both
 
