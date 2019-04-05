@@ -47,6 +47,9 @@ bindsym $mod+q exec "i3-msg 'workspace 2; exec qutebrowser'"
 # music player
 bindsym $mod+m exec "i3-msg 'workspace 8; exec urxvt -T CMUS -e bash -c cmus'"
 
+# screenshots
+bindsym Print exec "flameshot gui"
+
 # colors
 set $bg-color			#2f343f
 set $inactive-bg-color		#2f343f
@@ -69,8 +72,8 @@ bindsym $mod+d exec rofi -show run -theme /home/mime/.config/rofi/themes/rofi.ra
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # Gaps config
-gaps inner 10
-gaps outer 15
+gaps inner 30
+gaps outer 45
 for_window [class=".*"] border pixel 0
 hide_edge_borders both
 
@@ -261,13 +264,13 @@ workspace $ws9 output $main-screen
 workspace $ws10 output $main-screen
 
 # app-to-workspace relations
-# assign [title="gotop"] 9
+assign [title="gotop"] 9
 assign [title="ranger"] 4
 assign [title="CMUS"] 8
-# assign [title="wifi"] 10
-# assign [title="matrix"] 10
-# assign [class="^Pulseeffects$"] 10
-# assign [class="^Pavucontrol$"] 10
+assign [title="wifi"] 10
+assign [title="matrix"] 10
+assign [class="^Pulseeffects$"] 10
+assign [class="^Pavucontrol$"] 10
 assign [class="^URxvt$"] 1
 assign [class="^Firefox$"] 2
 assign [class="^qutebrowser$"] 2
@@ -278,24 +281,12 @@ assign [class="Atom"] 3
 # start layout
 # Workspace 5
 exec --no-startup-id "i3-msg 'workspace 5; append_layout /home/mime/.config/i3/ws5.json'"
-exec --no-startup-id urxvt -T IRC -e bash -c irssi
 
 # Workspace 9
 exec --no-startup-id "i3-msg 'workspace 9; append_layout /home/mime/.config/i3/ws9.json'"
-exec --no-startup-id urxvt -T gotop -e bash -c gotop
 
 # Workspace 10
 exec --no-startup-id "i3-msg 'workspace 10; append_layout /home/mime/.config/i3/ws10.json'"
-exec --no-startup-id urxvt -T wifi -e bash -c wicd-curses
-exec --no-startup-id urxvt -T matrix -e bash -c cmatrix
-exec --no-startup-id pavucontrol
-exec --no-startup-id pulseeffects
-
-
-# Workspace 1
-exec --no-startup-id urxvt -e bash -c 'neofetch && bash'
-exec --no-startup-id urxvt -e bash -c 'newsboat'
-exec --no-startup-id "i3-msg 'workspace 1'"
 
 # Specials
 for_window [class="Peek"] floating enable
@@ -341,3 +332,4 @@ bindsym $mod+r mode "resize"
 # }
 
 # Run processes...
+exec --no-startup-id $HOME/.config/i3/start_basics.sh
