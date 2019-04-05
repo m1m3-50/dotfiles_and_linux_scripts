@@ -16,7 +16,7 @@ This configuration is run on and tested with:
 * Void Linux
 * Huawei MateBook X Pro
   * Intel Core i7 8550U
-  * nVidia GeForce MX-150
+  * nVidia GeForce MX-150 (for experimental support of config, visit nvidia branch)
   * 16GB RAM
   * 3:2 (running at 1800x1200) 3K touch screen
 * external 27' monitor (with res 1980x1080 and 144Hz refresh rate)
