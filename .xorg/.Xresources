@@ -1,15 +1,19 @@
 !!! COMMON VARIABLES
-#define BG #373342
+#define BG rgba:2111/2111/2111/cdcd
+! old BG #373342
+
 #define FG #2f343f
 
 !!! URXVT CONFIG
 URxvt.scrollBar: false
+URxvt*depth: 32
+URxvt*blurRadius: 80
 URxvt.background: BG
-URxvt*transparent: true
-URxvt*shading: 20
+! URxvt*transparent: true
+! URxvt*shading: 10
 URxvt*foreground: #ffffff
 URxvt*internalBorder: 10
-URxvt*fading: 50
+URxvt*fading: 10
 URxvt.xftAntialias:     true
 URxvt*font:             xft:inconsolata:pixelsize=18:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=18:antialias=true,hinting=true, xft:Noto Emoji
 URxvt*boldFont:         xft:inconsolata:pixelsize=18:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=18:antialias=true,hinting=true

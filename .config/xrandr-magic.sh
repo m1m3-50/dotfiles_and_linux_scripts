@@ -3,3 +3,4 @@ MODENAME=`echo $MODELINE | awk -F' ' '{ print $1 };'`
 xrandr --newmode $MODELINE
 xrandr --addmode $1 $MODENAME
 xrandr --output $1 --mode $MODENAME
+

@@ -33,15 +33,8 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 
-# twm &
-
-# xclock -geometry 50x50-1+1 &
-# xterm -geometry 80x50+494+51 &
-# xterm -geometry 80x20+494-0 &
-# exec xterm -geometry 80x66+0+0 -name login
-
-xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
 $HOME/.config/xrandr-magic.sh $MONITOR
 $HOME/.config/manipulate_monitors.sh $MONITOR rtl
+start-pulseaudio-x11 &
 exec i3
