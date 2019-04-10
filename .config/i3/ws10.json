@@ -20,23 +20,6 @@
 						"x": 0,
 						"y": 0
 					},
-					"name": "wifi",
-					"percent": 0.6,
-					"swallows": [{
-						"title": "^wifi$"
-					}],
-					"type": "con"
-				},
-				{
-					"border": "pixel",
-					"current_border_width": 0,
-					"floating": "auto_off",
-					"geometry": {
-						"height": 404,
-						"width": 660,
-						"x": 0,
-						"y": 0
-					},
 					"name": "matrix",
 					"percent": 0.4,
 					"swallows": [{

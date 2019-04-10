@@ -13,7 +13,6 @@ urxvt -T IRC -e bash -c irssi &
 urxvt -T gotop -e bash -c gotop &
 
 # Workspace 10
-urxvt -T wifi -e bash -c wicd-curses &
 urxvt -T matrix -e bash -c cmatrix &
 pavucontrol &
 pulseeffects &
