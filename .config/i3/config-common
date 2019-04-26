@@ -273,6 +273,7 @@ assign [class="^Pulseeffects$"] 10
 assign [class="^Pavucontrol$"] 10
 assign [class="^URxvt$"] 1
 assign [class="^Firefox$"] 2
+assign [class="^Brave-browser$"] 2
 assign [class="^qutebrowser$"] 2
 assign [class="TelegramDesktop"] 5
 assign [class="org.remmina.Remmina"] 6
