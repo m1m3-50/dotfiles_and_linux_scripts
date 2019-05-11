@@ -40,11 +40,16 @@ __prompt_command() {
 alias ls='ls --color=auto'
 S1='[\u@\h \W]\$ '
 
+alias qxbps="sudo xbps-query"
+alias ixbps="sudo xbps-install"
+alias rxbps="sudo xbps-remove"
 alias thunderbolt_authorize="sudo /root/scripts/authorize-thunderbolt-device.sh"
 alias poweroff="sudo poweroff"
 alias reboot="sudo reboot"
-alias xbps-query="sudo xbps-query"
 alias brightnessctl="sudo brightnessctl"
 alias startx="$HOME/.config/startx_menu.sh"
+
+
+
 
 export ELECTRON_TRASH=gio
