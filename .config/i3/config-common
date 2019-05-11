@@ -278,6 +278,7 @@ assign [class="^qutebrowser$"] 2
 assign [class="TelegramDesktop"] 5
 assign [class="org.remmina.Remmina"] 6
 assign [class="Atom"] 3
+assign [class="^jetbrains-idea$"] 3
 
 # start layout
 # Workspace 5
