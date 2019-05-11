@@ -3,8 +3,9 @@
 sleep 1
 
 # Workspace 1
-urxvt -e bash -c 'neofetch && bash' &
-urxvt -e bash -c 'newsboat' &
+urxvt -T main -e bash -c "tmux new -s main-sess \"neofetch; bash\" \; split-window \"newsboat\" \; select-layout even-horizontal" &
+# urxvt -e bash -c 'neofetch && bash' &
+# urxvt -e bash -c 'newsboat' &
 
 # Workspace 5
 urxvt -T IRC -e bash -c irssi &
